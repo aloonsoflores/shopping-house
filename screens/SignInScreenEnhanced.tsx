@@ -163,13 +163,6 @@ export default function SignInScreen({ navigation }: any) {
         keyboardShouldPersistTaps="handled"
       >
         <View style={styles.content}>
-          <LottieView
-            source={require('../assets/lottie/Shopping List.json')}
-            autoPlay
-            loop
-            style={styles.lottie}
-          />
-
           <View style={styles.header}>
             <Text style={styles.title}>¡Bienvenido!</Text>
             <Text style={styles.subtitle}>
