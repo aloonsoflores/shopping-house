@@ -2,11 +2,12 @@ import React, { useContext } from 'react';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { AuthContext } from '../contexts/AuthContext';
 import { ThemeContext } from '../contexts/ThemeContext';
-import SignInScreen from '../screens/SignInScreen';
-import SignUpScreen from '../screens/SignUpScreen';
-import HouseSetupScreen from '../screens/HouseSetupScreen';
-import ProfileScreen from '../screens/ProfileScreen';
-import SharedListScreen from '../screens/SharedListScreen';
+import SignInScreen from '../screens/SignInScreenEnhanced';
+import SignUpScreen from '../screens/SignUpScreenEnhanced';
+import HouseSetupScreen from '../screens/HouseSetupScreenEnhanced';
+import ProfileScreen from '../screens/ProfileScreenEnhanced';
+import SharedListScreen from '../screens/SharedListScreenEnhanced';
+import HouseDetailsScreen from '../screens/HouseDetailsScreen';
 import ProtectedRoute from '../components/ProtectedRoute';
 
 export type RootStackParamList = {
@@ -15,6 +16,7 @@ export type RootStackParamList = {
   HouseSetup: undefined;
   Profile: undefined;
   SharedList: { houseId: string };
+  HouseDetails: { houseId: string };
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -96,6 +98,22 @@ export default function AppStack() {
         {props => (
           <ProtectedRoute>
             <SharedListScreen {...props} />
+          </ProtectedRoute>
+        )}
+      </Stack.Screen>
+
+      {/* Pantalla Detalles de Casa */}
+      <Stack.Screen
+        name="HouseDetails"
+        options={{
+          title: 'Detalles de la Casa',
+          headerBackTitle: 'Volver',
+          headerShown: true,
+        }}
+      >
+        {props => (
+          <ProtectedRoute>
+            <HouseDetailsScreen {...props} />
           </ProtectedRoute>
         )}
       </Stack.Screen>
