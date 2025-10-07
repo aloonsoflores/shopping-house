@@ -4,7 +4,7 @@ import { AuthContext } from '../contexts/AuthContext';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { typography, spacing, borderRadius, shadows, touchTargetSize } from '../styles/designSystem';
 import Button from '../components/Button';
-import { Mail, Lock, User as UserIcon, AlertCircle, CheckCircle } from 'lucide-react-native';
+import { Mail, Lock, User as UserIcon, CircleAlert as AlertCircle, CircleCheck as CheckCircle } from 'lucide-react-native';
 
 export default function SignUpScreen({ navigation }: any) {
   const { signUp } = useContext(AuthContext);

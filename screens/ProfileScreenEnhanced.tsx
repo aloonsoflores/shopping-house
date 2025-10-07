@@ -7,7 +7,7 @@ import { Picker } from "@react-native-picker/picker";
 import { languageOptions } from '../utils/languages';
 import { typography, spacing, borderRadius, shadows, touchTargetSize } from '../styles/designSystem';
 import Button from '../components/Button';
-import { User, Mail, Phone, Globe, Bell, Camera, TrendingUp, ShoppingBag, Home as HomeIcon } from 'lucide-react-native';
+import { User, Mail, Phone, Globe, Bell, Camera, TrendingUp, ShoppingBag, Hop as HomeIcon } from 'lucide-react-native';
 
 export default function ProfileScreen() {
   const { user, signOut } = useContext(AuthContext);

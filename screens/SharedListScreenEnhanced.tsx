@@ -8,7 +8,7 @@ import { typography, spacing, borderRadius, shadows, touchTargetSize } from '../
 import Button from '../components/Button';
 import EmptyState from '../components/EmptyState';
 import { SkeletonList } from '../components/SkeletonLoader';
-import { ShoppingCart, Check, Trash2, Plus, Search, Filter } from 'lucide-react-native';
+import { ShoppingCart, Check, Trash2, Plus, Search, ListFilter as Filter } from 'lucide-react-native';
 
 const { width } = Dimensions.get('window');
 

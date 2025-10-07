@@ -5,7 +5,7 @@ import { ThemeContext } from '../contexts/ThemeContext';
 import LottieView from 'lottie-react-native';
 import { typography, spacing, borderRadius, shadows, touchTargetSize } from '../styles/designSystem';
 import Button from '../components/Button';
-import { Mail, Lock, AlertCircle } from 'lucide-react-native';
+import { Mail, Lock, CircleAlert as AlertCircle } from 'lucide-react-native';
 
 export default function SignInScreen({ navigation }: any) {
   const { signIn } = useContext(AuthContext);

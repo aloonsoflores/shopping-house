@@ -3,7 +3,7 @@ import { View, Text, StyleSheet, Animated, TouchableOpacity } from 'react-native
 import { useContext } from 'react';
 import { ThemeContext } from '../contexts/ThemeContext';
 import { typography, spacing, borderRadius, shadows } from '../styles/designSystem';
-import { CheckCircle, AlertCircle, X } from 'lucide-react-native';
+import { CircleCheck as CheckCircle, CircleAlert as AlertCircle, X } from 'lucide-react-native';
 
 type ToastType = 'success' | 'error' | 'info';
 

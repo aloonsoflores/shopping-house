@@ -9,7 +9,7 @@ import { typography, spacing, borderRadius, shadows, touchTargetSize } from '../
 import Button from '../components/Button';
 import EmptyState from '../components/EmptyState';
 import { SkeletonList } from '../components/SkeletonLoader';
-import { Home, Plus, LogIn, User, Sun, Moon, LogOut, ChevronRight } from 'lucide-react-native';
+import { Hop as Home, Plus, LogIn, User, Sun, Moon, LogOut, ChevronRight } from 'lucide-react-native';
 
 type Props = NativeStackScreenProps<RootStackParamList, 'HouseSetup'>;
 
